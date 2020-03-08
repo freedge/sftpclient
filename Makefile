@@ -1,6 +1,5 @@
-SSH2LIB ?= ssh2
 override CFLAGS += -Wall -g
-override LDFLAGS += -l$(SSH2LIB)
+override LDFLAGS += -lssh2
 
 sftptest: sftptest.c
 
