@@ -14,6 +14,6 @@ steps:
     sudo apt-get install -y libssh2-1-dev vmtouch
   displayName: 'install prerequisites'
 - script: |
-    LDFLAGS=-L/usr/lib/x86_64-linux-gnu/ make
+    make
     ldd sftptest
   displayName: 'make'
