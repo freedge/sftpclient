@@ -1,5 +1,5 @@
 override CFLAGS += -Wall -g
-override LDFLAGS += $(shell pkg-config libssh2 --cflags --libs)
+LDLIBS=-lssh2
 
 sftptest: sftptest.c
 
